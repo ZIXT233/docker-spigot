@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV SPIGOT_HOME /minecraft
 
 ADD spigot_init.sh /spigot_init.sh
-ADD paper_spigot.jar /spigot.jar
+ADD PaperSpigot-1.8.8-R0.1-SNAPSHOT-latest.jar /spigot.jar
 RUN chmod +x /spigot_init.sh
 
 RUN apt-get update && apt-get install -y wget git && apt-get clean all
