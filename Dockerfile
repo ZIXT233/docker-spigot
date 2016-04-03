@@ -5,7 +5,7 @@ MAINTAINER ZIXT233 <zixt233@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV SPIGOT_HOME /minecraft
-ENV MINECRAFT_OPTS "-server -Xmx$JAVA_XMX -Xms$JAVA_XMS -XX:MaxPermSize=$JAVA_PERMSIZE -XX:+UseParNewGC -XX:+UseConcMarkSweepGC"
+ENV MINECRAFT_OPTS "-server -Xmx1024M -Xms1024M -XX:MaxPermSize=450M -XX:+UseParNewGC -XX:+UseConcMarkSweepGC"
 ADD spigot_init.sh /spigot_init.sh
 ADD PaperSpigot-1.8.8-R0.1-SNAPSHOT-latest.jar /spigot.jar
 RUN chmod +x /spigot_init.sh
