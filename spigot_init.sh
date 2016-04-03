@@ -21,7 +21,6 @@ if [ ! -f /$SPIGOT_HOME/spigot.jar ]; then
 
 fi
 
-# chance owner to minecraft
 chown -R minecraft.minecraft /$SPIGOT_HOME/
 
 
