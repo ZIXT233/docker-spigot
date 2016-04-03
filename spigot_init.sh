@@ -26,7 +26,7 @@ chown -R minecraft.minecraft /$SPIGOT_HOME/
 
 
 cd /$SPIGOT_HOME/
-su - minecraft -c 'java -Xms500M -Xmx500M -XX:MaxPermSize=128M -jar spigot.jar'
+su - minecraft -c 'java -Xmx$JAVA_XMX -Xms$JAVA_XMS -XX:MaxPermSize=$JAVA_PERMSIZE -jar spigot.jar'
 
 bash
 
