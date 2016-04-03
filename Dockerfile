@@ -5,7 +5,9 @@ MAINTAINER ZIXT233 <zixt233@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV SPIGOT_HOME /minecraft
-
+ENV JAVA_XMX 1G
+ENV JAVA_XMS 1G
+ENV JAVA_PERMSIZE 455m
 ADD spigot_init.sh /spigot_init.sh
 ADD PaperSpigot-1.8.8-R0.1-SNAPSHOT-latest.jar /spigot.jar
 RUN chmod +x /spigot_init.sh
