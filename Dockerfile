@@ -12,7 +12,7 @@ RUN chmod +x /spigot_init.sh
 RUN apt-get update && apt-get install -y wget git && apt-get clean all
 
 RUN wget https://ci.destroystokyo.com/job/PaperSpigot/lastSuccessfulBuild/artifact/paperclip.jar \
-    mv paperclip.jar /spigot.jar
+    && mv paperclip.jar /spigot.jar
 
 RUN useradd -s /bin/bash -d /minecraft -m minecraft
 VOLUME ["$SPIGOT_HOME"]
