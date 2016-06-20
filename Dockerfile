@@ -15,6 +15,7 @@ RUN wget https://ci.destroystokyo.com/job/PaperSpigot/lastSuccessfulBuild/artifa
     && mv paperclip.jar $SPIGOT_HOME \
     && cd $SPIGOT_HOME \
     && java -jar paperclip.jar
+    && echo "eula=true" > eula.txt
 
 RUN useradd -s /bin/bash -d /minecraft -m minecraft
 VOLUME ["$SPIGOT_HOME"]
